@@ -1,0 +1,87 @@
+.footer {
+    background-color: var(--sixth-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-container {
+    text-align: center;
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-around;
+        row-gap: 60px;
+    }
+    @include desktop {
+        justify-content: flex-start;
+        gap: 93px;
+        text-align: left;
+    }
+}
+
+.footer-logo {
+    color: var(--fourth-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    @include desktop {
+    font-size: 26px;
+    line-height: 1.19;
+    }  
+}
+
+.web-logo {
+    color: var(--tertiary-color);
+}
+
+.address-list {
+    margin-top: 20px;
+}
+
+.address {
+    margin-bottom: 9px;
+    color: var(--fourth-color);
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+}
+
+.adress-item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.footer-mail {
+    color: var(--eighth-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+    color: var(--tertiary-color);
+   }
+}
+
+.footer-tel {
+    color: var(--eighth-color);
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    color: var(--tertiary-color);
+   }
+}
+
+.address-footer, .socials-footer {
+    margin-bottom: 60px;
+
+@include tablet {
+    margin-bottom: 0;
+}
+}

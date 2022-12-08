@@ -1,0 +1,21 @@
+@import './utils/vars';
+@import './utils/reset';
+@import './utils/mixins';
+
+@import './components/container';
+@import './components/button';
+@import './components/modal-form';
+@import './components/menu';
+
+@import './layouts/header-nav';
+@import './layouts/header-contacts';
+@import './layouts/hero';
+@import './layouts/features';
+@import './layouts/activyty';
+@import './layouts/team';
+@import './layouts/clients';
+@import './layouts/footer';
+@import './layouts/footer-socials';
+@import './layouts/footer-form';
+@import './layouts/portfolio';
+@import './layouts/portfolio-cards';
