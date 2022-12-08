@@ -755,12 +755,8 @@ img {
 
 .team {
   background-color: var(--seventh-color);
-}
-@media screen and (min-width: 480px) {
-  .team {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .team {
@@ -880,11 +876,9 @@ img {
   fill: currentColor;
 }
 
-@media screen and (min-width: 480px) {
-  .clients-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+.clients-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .clients-section {

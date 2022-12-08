@@ -1,9 +1,7 @@
 .team {
-    background-color: var(--seventh-color);
-    @include mobile {
+        background-color: var(--seventh-color);
         padding-top: 60px;
         padding-bottom: 60px;
-        }
         @include tablet {
         padding-top: 60px;
         padding-bottom: 60px;
