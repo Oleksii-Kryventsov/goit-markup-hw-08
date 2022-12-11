@@ -37,4 +37,22 @@ img {
     text-transform: none;
 }
 
+.section-title{
+    text-align: center;
+}
 
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  
+    // @include desktop {
+    //   padding-top: 94px;
+    //   padding-bottom: 94px;
+    // }
+  }
+
+  .is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }

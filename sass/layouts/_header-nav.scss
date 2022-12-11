@@ -10,15 +10,20 @@
 }
 
 .logo-header {
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
+//   margin-right: 93px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   color:var(--fifth-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   text-decoration: none;
+
+  @include tablet {
+  padding-top: 26px;
+  padding-bottom: 26px;
+  }
 }
 
 .logo-header__web {
