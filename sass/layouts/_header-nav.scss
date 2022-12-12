@@ -7,12 +7,13 @@
 .header--container {
     display:flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .logo-header {
-//   margin-right: 93px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+
+  padding-top: 26px;
+  padding-bottom: 26px;
   color:var(--fifth-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -20,9 +21,12 @@
   line-height: 1.16;
   text-decoration: none;
 
-  @include tablet {
-  padding-top: 26px;
-  padding-bottom: 26px;
+  @include desktop {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+  font-size: 26px;
+  line-height: 1.19;
   }
 }
 
@@ -31,6 +35,13 @@
 }
 
 /* site-nav */
+.header-nav{
+    display: none;
+    @include tablet {
+        display: flex;
+        align-items: center;
+    }
+}
 
 .site-nav {
     display:flex;
@@ -38,7 +49,6 @@
 }
 
 .nav-current {
-    width: 45px;
     color: var(--secondary-color);
     font-weight: 500;
     font-size: 14px;
@@ -53,7 +63,6 @@
 }
 
 .nav-portfolio {
-    width: 72px;
     color: var(--secondary-color);
     font-weight: 500;
     font-size: 14px;
@@ -68,7 +77,6 @@
 }
 
 .nav-contacts {
-    width: 64px;
     color: var(--secondary-color);
     font-weight: 500;
     font-size: 14px;
@@ -82,9 +90,10 @@
     }
 }
 
-.nav{
+.nav {
     position: relative;
-    padding-bottom: 33px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .current{
@@ -99,5 +108,11 @@
     height: 4px;
     background-color: var(--tertiary-color);
     border-radius: 2px;
+
+    @media screen and (max-width:767px){
+        display:none;
     }
+    }
+
+    
 }

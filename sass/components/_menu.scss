@@ -5,7 +5,7 @@
     width: 100vw;
     height: 100vh;
     background-color:var(--fourth-color);
-    padding-top: 48px 40px;
+    padding: 48px 40px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -15,5 +15,102 @@
     @include tablet {
         display: none;
     }
-    
+}
+
+.menu-button {
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    @include tablet{
+        display: none;
+    }
+}
+
+.menu-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        fill: var(--tertiary-color);;
+    }
+}
+
+.menu-button-close {
+    position:absolute;
+    display: block;
+    margin-left: auto;
+    top: 11px;
+    right: 15px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.menu-close-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        fill: var(--tertiary-color);;
+    }
+}
+
+.menu-item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.menu-link {
+    display: block;
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+}
+
+.auth-menu {
+    margin-top: auto;
+}
+
+.auth-item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.auth-link.tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color:var(--tertiary-color);
+}
+
+.auth-link.mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color:var(--main-color);
+}
+
+.social-menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 64px;
+}
+
+.social-menu-item:not(:first-child) {
+    padding-left: 10px;
+}
+
+.social-menu-item:not(:last-child) {
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.social-menu-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: var(--tertiary-color);
 }
