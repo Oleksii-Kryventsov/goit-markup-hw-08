@@ -32,7 +32,6 @@
 
 .features__item {
     width: 100%;
-    // width: calc((100% - 90px) / 4);
     @include tablet {
         width: calc((100% - 30px) / 2);
       }
