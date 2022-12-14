@@ -178,43 +178,6 @@ img {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.modal-btn {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  min-width: 200px;
-  height: 50px;
-  border-radius: 4px;
-  color: var(--fourth-color);
-  background-color: var(--tertiary-color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  text-align: center;
-  border: none;
-  cursor: pointer;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-btn:hover, .modal-btn:focus {
-  background-color: #188CE8;
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -241,9 +204,8 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-  overflow: auto;
-  min-width: 100%;
-  height: 550px;
+  max-width: 450px;
+  min-height: 530px;
   top: 50%;
   left: 50%;
   padding: 20px;
@@ -264,15 +226,15 @@ img {
 }
 @media screen and (min-width: 480px) {
   .modal {
-    min-width: 450px;
-    max-height: 609px;
+    width: 450px;
+    height: 530px;
     padding: 40px;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
     min-width: 528px;
-    min-height: 581px;
+    height: 581px;
   }
 }
 
@@ -515,6 +477,43 @@ img {
   }
 }
 
+.modal-btn {
+  position: absolute;
+  min-width: 200px;
+  height: 50px;
+  left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 4px;
+  color: var(--fourth-color);
+  background-color: var(--tertiary-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
+  border: none;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  cursor: pointer;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-btn:hover, .modal-btn:focus {
+  background-color: #188CE8;
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -606,6 +605,12 @@ img {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--tertiary-color);
+}
+@media screen and (max-width: 479px) {
+  .auth-link.tel {
+    font-size: 24px;
+    line-height: 1.16;
+  }
 }
 
 .auth-link.mail {
@@ -814,7 +819,7 @@ img {
 @media screen and (min-width: 1200px) {
   .adress-header {
     padding: 32px 0;
-    font-size: 14;
+    font-size: 14px;
     line-height: 1.14;
   }
 }
@@ -1589,6 +1594,11 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   font-weight: 700;
+}
+@media screen and (max-width: 1199px) {
+  .example-title {
+    font-size: 16px;
+  }
 }
 
 .example-text {
