@@ -224,6 +224,11 @@ img {
   -webkit-transform: translate(-50%, -50%) scaleX(1.9);
           transform: translate(-50%, -50%) scaleX(1.9);
 }
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 480px) {
   .modal {
     width: 450px;
